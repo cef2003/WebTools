@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 3</title>
+    <style>
+        .contact-form_03 {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 225px;
+}
+
+.contact-form_03 label {
+  color: black;
+}
+
+.contact-form_03 .heading_03 {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 12px;
+  font-weight: bold;
+  display: block;
+}
+
+.contact-form_03 form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form_03 label {
+  margin-bottom: 10px;
+}
+
+.contact-form_03 textarea {
+  resize: none;
+  height: 80px;
+  width: 200px;
+}
+
+.contact-form_03 input, .contact-form_03 textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact-form_03 input:focus, .contact-form_03 textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ff6384;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-form_03 button[type="submit"] {
+  background-color: #ff6384;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form_03 button[type="submit"]:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+    </style>
+</head>
+<body>
+    <div class="contact-form_03">
+        <span class="heading_03">Contact Us</span>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" required="">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required="">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required=""></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+          
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card 3</title>
+    <style>
+        .flip-card_03 {
+  background-color: transparent;
+  width: 190px;
+  height: 254px;
+  perspective: 1000px;
+  font-family: sans-serif;
+}
+
+.title_03 {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner_03 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card_03:hover .flip-card-inner_03 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front_03, .flip-card-back_03 {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid coral;
+  border-radius: 1rem;
+}
+
+.flip-card-front_03 {
+  background: rgb(255, 174, 145);
+  color: white;
+}
+
+.flip-card-back_03 {
+  background: coral;
+  color: white;
+  transform: rotateY(180deg);
+}
+    </style>
+</head>
+<body>
+    <div class="flip-card_03">
+        <div class="flip-card-inner_03">
+            <div class="flip-card-front_03">
+                <p class="title_03">FLIP CARD</p>
+                <p>Hover Me</p>
+            </div>
+            <div class="flip-card-back_03">
+                <p class="title_03">BACK</p>
+                <p>Leave Me</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

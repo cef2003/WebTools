@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio 3</title>
+    <style>
+        .radio-input_03 .label_03 input {
+  display: none;
+}
+
+.radio-input_03 {
+  display: flex;
+  gap: 20px;
+}
+
+.radio-input_03 .label_03 {
+  display: flex;
+}
+
+.radio-input_03 .label_03 .check_03 {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 3px solid transparent;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5),
+   -1px -1px 4px rgba(255, 255, 255, 0.5);
+}
+
+.radio-input_03 .label_03 input:checked + .check_03 {
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5),
+   -1px -1px 4px rgba(255, 255, 255, 0.5),
+   inset 3px 3px 6px rgba(0, 0, 0, 0.5),
+   inset -1px -1px 4px rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+}
+    </style>
+</head>
+<body>
+    <div class="radio-input_03">
+        <label class="label_03">
+          <input type="radio" name="radio" checked="">
+          <span class="check_03"></span>
+        </label>
+        <label class="label_03">
+          <input type="radio" name="radio">
+          <span class="check_03"></span>
+        </label>
+            
+        <label class="label_03">
+          <input type="radio" name="radio">
+          <span class="check_03"></span>
+        </label>
+      </div>   
+</body>
+</html>

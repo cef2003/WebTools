@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio 4</title>
+    <style>
+        .radio-button_04 {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px;
+  position: relative;
+  align-items: center;
+}
+
+.radio-button_04 input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio_04 {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  transform: translateZ(-25px);
+  transition: all 0.3s ease-in-out;
+}
+
+.radio_04::before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.radio-button_04 input[type="radio"]:checked + .radio_04 {
+  border-color: #1b4e1b;
+  transform: translateZ(0px);
+  background-color: #fff;
+}
+
+.radio-button_04 input[type="radio"]:checked + .radio_04::before {
+  opacity: 1;
+}
+
+    </style>
+</head>
+<body>
+    <label class="radio-button_04">
+        <input value="option1" name="example-radio" type="radio">
+        <span class="radio_04"></span>
+        Option 1
+      </label>
+      
+      <label class="radio-button_04">
+        <input value="option2" name="example-radio" type="radio">
+        <span class="radio_04"></span>
+        Option 2
+      </label>
+          
+</body>
+</html>

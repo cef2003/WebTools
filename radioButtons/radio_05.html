@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio 5</title>
+    <style>
+       .container_05 input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container_05 {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-size: 17px;
+  width: 4em;
+  height: 4em;
+  user-select: none;
+  border: 4px solid;
+  border-image-slice: 1;
+  background-color: #ffffff;
+}
+
+label {
+  font-size: 12px;
+  margin-top: -6px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  visibility: visible;
+}
+
+#topleft_05 {
+  border-image-source: linear-gradient(-45deg, #743ad5, #d53a9d);
+}
+
+#topright_05 {
+  border-image-source: linear-gradient(45deg, #743ad5, #d53a9d);
+}
+
+#bottomleft_05 {
+  border-image-source: linear-gradient(-135deg, #743ad5, #d53a9d);
+}
+
+#bottomright_05 {
+  border-image-source: linear-gradient(135deg, #743ad5, #d53a9d);
+}
+
+.selected_05 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#topleft_05:hover {
+  border-image-source: linear-gradient(-45deg, #743ad5, #d53a9d);
+  background-image: linear-gradient(-45deg, #743ad5, #d53a9d);
+}
+
+#topright_05:hover {
+  border-image-source: linear-gradient(45deg, #743ad5, #d53a9d);
+  background-image: linear-gradient(45deg, #743ad5, #d53a9d);
+}
+
+#bottomleft_05:hover {
+  border-image-source: linear-gradient(-135deg, #743ad5, #d53a9d);
+  background-image: linear-gradient(-135deg, #743ad5, #d53a9d);
+}
+
+#bottomright_05:hover {
+  border-image-source: linear-gradient(135deg, #743ad5, #d53a9d);
+  background-image: linear-gradient(135deg, #743ad5, #d53a9d);
+}
+
+#topleft_05 input[type="radio"]:checked ~ .selected_05 {
+    box-shadow: -10px -10px 40px #5e1ccf,
+                10px 0px 40px #c71686;
+  border-image-slice: 1;
+}
+
+#topright_05 input[type="radio"]:checked ~ .selected_05 {
+    box-shadow: -10px -10px 40px #5e1ccf,
+                10px 0px 40px #c71686;
+  border-image-slice: 1;
+}
+
+#bottomleft_05 input[type="radio"]:checked ~ .selected_05 {
+    box-shadow: -10px -10px 40px #5e1ccf,
+                10px 0px 40px #c71686;
+  border-image-slice: 1;
+}
+
+#bottomright_05 input[type="radio"]:checked ~ .selected_05 {
+  box-shadow: -10px -10px 40px #5e1ccf,
+                10px 0px 40px #c71686;
+  border-image-slice: 1;
+}
+ 
+    </style>
+</head>
+<body>
+    <label class="container_05" id="topleft_05">
+        <input type="radio" name="my-radio-button">
+        <label id="tl">Top <br>Left</label>
+        <div class="selected_05"></div>
+      </label>
+      &nbsp;
+      <label class="container_05" id="topright_05">
+        <input type="radio" name="my-radio-button">
+        <label id="tr">Top<br>Right</label>
+        <div class="selected_05"></div>
+      </label>
+      <br>
+      <br>
+      <label class="container_05" id="bottomleft_05">
+        <input type="radio" name="my-radio-button">
+        <label id="bl">Bottom <br>Left</label>
+        <div class="selected_05"></div>
+      </label>
+      &nbsp;
+      <label class="container_05" id="bottomright_05">
+        <input type="radio" name="my-radio-button">
+        <label id="br">Bottom <br>Right</label>
+        <div class="selected_05"></div>
+      </label>
+</body>
+</html>

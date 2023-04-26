@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cards 2</title>
+    <style>
+        .card_02 {
+  width: 210px;
+  height: 254px;
+  border-radius: 4px;
+  display: flex;
+  gap: 5px;
+  padding: .4em;
+}
+
+.card_02 p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all .5s;
+  background: #212121;
+  border: 1px solid #ff5a91;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_02 p:hover {
+  flex: 4;
+}
+
+.card_02 p span {
+  min-width: 14em;
+  padding: .5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all .5s;
+  text-transform: uppercase;
+  color: #ff568e;
+  letter-spacing: .1em;
+}
+
+.card_02 p:hover span {
+  transform: rotate(0);
+}
+    </style>
+</head>
+<body>
+    <div class="card_02">
+        <p><span>HOVER ME</span></p>
+        <p><span>HOVER ME</span></p>
+        <p><span>HOVER ME</span></p>
+    </div>
+</body>
+</html>

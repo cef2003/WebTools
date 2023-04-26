@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cards 1</title>
+    <style>
+        .card_01 {
+  width: 190px;
+  height: 254px;
+  background: rgba(211, 211, 211, 0.199);
+  position: absolute;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+}
+
+#c1_01 {
+  background-color: black;
+}
+
+#c2_01 {
+  background-color: blue;
+}
+
+#c3_01 {
+  background-color: red;
+}
+
+#c4_01 {
+  background-color: green;
+}
+
+.main_01:hover #c1_01 {
+  transform: translateX(-100px) rotate(-40deg);
+}
+
+.main_01:hover #c2_01 {
+  transform: translateX(-50px) rotate(-30deg);
+}
+
+.main_01:hover #c3_01 {
+  transform: translateX(0) rotate(-20deg);
+}
+
+.main_01:hover #c4_01 {
+  transform: translateX(50px) rotate(-10deg);
+}
+
+#c1_01:hover {
+  transform: translateX(-150px) rotate(0deg) !important;
+}
+
+#c2_01:hover {
+  transform: translateX(-100px) rotate(0deg) !important;
+}
+
+#c3_01:hover {
+  transform: translateX(-50px) rotate(0deg) !important;
+}
+
+#c4_01:hover {
+  transform: translateX(50px) rotate(0deg) !important;
+}
+
+.main_01 {
+  display: grid;
+  height: 50vmax;
+  place-items: center;
+}
+    </style>
+</head>
+<body>
+    <div class="main_01">
+        <div class="card_01" id="c1_01"></div>
+        <div class="card_01" id="c2_01"></div>
+        <div class="card_01" id="c3_01"></div>
+        <div class="card_01" id="c4_01"></div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loader 5</title>
+    <style>
+        .spinner_05 {
+ flex-direction: row;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.dot1_05, .dot2_05, .dot3_05 {
+ width: 15px;
+ height: 15px;
+ border: double;
+ border-color: white;
+ border-radius: 50%;
+ margin: 10px;
+}
+
+.dot1_05 {
+ animation: jump765 1.6s -0.32s linear infinite;
+ background: #2495ff;
+}
+
+.dot2_05 {
+ animation: jump765 1.6s -0.16s linear infinite;
+ background: #2495ff;
+}
+
+.dot3_05 {
+ animation: jump765 1.6s linear infinite;
+ background: #2495ff;
+}
+
+@keyframes jump765 {
+ 0%, 80%, 100% {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+ }
+
+ 40% {
+  -webkit-transform: scale(2.0);
+  transform: scale(2.0);
+ }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="spinner_05">
+        <div class="dot1_05"></div>
+        <div class="dot2_05"></div>
+        <div class="dot3_05"></div>
+        </div>    
+</body>
+</html>
